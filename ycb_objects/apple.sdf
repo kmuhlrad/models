@@ -27,7 +27,7 @@ weld_base_to_world joint, and remove damping from the joints.
         <geometry>
           <mesh>
             <scale>1 1 1</scale>
-            <uri>apple_1200_faces.obj</uri>
+            <uri>textures/apple_1200_faces.obj</uri>
           </mesh>
         </geometry>
         <material>

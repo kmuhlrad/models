@@ -21,9 +21,12 @@
           <size>0.06 0.158 0.210</size>
         </box>
       </geometry>
-      <material>
+      <!-- <material>
         <diffuse>0.7 0.06 0.09 1.0</diffuse>
-      </material>
+      </material> -->
+      <mesh>
+        <uri>textures/cracker_box_textured.dae</uri>
+      </mesh>
     </visual>
 
     <!--

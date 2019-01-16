@@ -2,20 +2,22 @@
 <sdf version='1.6'>
 <model name="potted_meat_can">
   <link name="base_link_meat">
+
     <inertial>
-      <pose frame=''>0 0 0.041 0 0 0</pose>
-      <mass>0.37</mass>
+      <pose frame=''>0 0 0 0 0 0</pose>
+      <mass>0.037000</mass>
         <inertia>
-          <ixx>0.000533256641667</ixx>
+          <ixx>0.000032</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.000317275308333</iyy>
+          <iyy>0.000042</iyy>
           <iyz>0</iyz>
-          <izz>0.000420576533333</izz>
+          <izz>0.000053</izz>
         </inertia>
     </inertial>
+
     <visual name='base_link_meat'>
-      <pose frame=''>0 0 0.04175 -1.57 0 1.57</pose>
+      <pose frame=''>0 0 0 0 0 0</pose>
       <geometry>
         <mesh>
           <uri>textures/potted_meat_can_texture.obj</uri>
@@ -35,10 +37,10 @@
       case a deviation of 0.0005 m from the visual surface).
      -->
     <collision name='potted_meat_can_collision'>
-      <pose>0 0 0.04175 0 0 0</pose>
+      <pose>0 0 0 0 0 0</pose>
       <geometry>
         <box> 
-          <size>0.0566 0.1006 0.0825</size>
+          <size>0.095600 0.077500 0.051600</size>
         </box>
       </geometry>
       <material>
@@ -47,61 +49,61 @@
     </collision>
 
     <collision name='point_collision1'>
-      <pose>0.0288 0.0508 0 0 0 0</pose>
+      <pose>0.048300 0.039250 0.026300 0 0 0 </pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
     <collision name='point_collision2'>
-      <pose>0.0288 -0.0508 0 0 0 0</pose>
+      <pose>0.048300 -0.039250 0.026300 0 0 0 </pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
     <collision name='point_collision3'>
-      <pose>-0.0288 0.0508 0 0 0 0</pose>
+      <pose>-0.048300 0.039250 0.026300 0 0 0 </pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
     <collision name='point_collision4'>
-      <pose>-0.0288 -0.0508 0 0 0 0</pose>
+      <pose>-0.048300 -0.039250 0.026300 0 0 0 </pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
     <collision name='point_collision5'>
-      <pose>0.0288 0.0508 0.0835 0 0 0</pose>
+      <pose>0.048300 0.039250 -0.026300 0 0 0 </pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
     <collision name='point_collision6'>
-      <pose>0.0288 -0.0508 0.0835 0 0 0</pose>
+      <pose>0.048300 -0.039250 -0.026300 0 0 0 </pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
     <collision name='point_collision7'>
-      <pose>-0.0288 0.0508 0.0835 0 0 0</pose>
+      <pose>-0.048300 0.039250 -0.026300 0 0 0 </pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
     <collision name='point_collision8'>
-      <pose>-0.0288 -0.0508 0.0835 0 0 0</pose>
+      <pose>-0.048300 -0.039250 -0.026300 0 0 0 </pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
-   </link>
+  </link>
 </model>
 </sdf>

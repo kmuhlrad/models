@@ -2,20 +2,22 @@
 <sdf version='1.6'>
 <model name="cracker_box">
   <link name="base_link_cracker">
+
     <inertial>
-      <pose frame=''>0 0 0.1065 0 0 0 </pose>
-      <mass>0.411</mass>
+      <pose frame=''>0 0 0 0 0 0</pose>
+      <mass>0.411000</mass>
         <inertia>
-          <ixx>0.00247507625</ixx>
+          <ixx>0.001736</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.00173045522</iyy>
+          <iyy>0.001098</iyy>
           <iyz>0</iyz>
-          <izz>0.00109775497</izz>
+          <izz>0.002481</izz>
         </inertia>
     </inertial>
+
     <visual name='base_link_cracker'>
-      <pose frame=''>0 0 0.1065 -1.57 0 1.57</pose>
+      <pose frame=''>0 0 0 0 0 0</pose>
       <geometry>
         <mesh>
           <uri>textures/cracker_box_texture.obj</uri>
@@ -35,10 +37,10 @@
       case a deviation of 0.0005 m from the visual surface).
      -->
     <collision name='cracker_box_collision'>
-      <pose>0 0 0.1065 0 0 0</pose>
+      <pose>0 0 0 0 0 0</pose>
       <geometry>
         <box> 
-          <size>0.0708 0.163 0.212</size>
+          <size>0.158000 0.207400 0.065800</size>
         </box>
       </geometry>
       <material>
@@ -47,61 +49,61 @@
     </collision>
 
     <collision name='point_collision1'>
-      <pose>0.0359 0.082 0 0 0 0</pose>
+      <pose>0.079500 0.104200 0.033400 0 0 0 </pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
     <collision name='point_collision2'>
-      <pose>0.0359 -0.082 0 0 0 0</pose>
+      <pose>0.079500 -0.104200 0.033400 0 0 0 </pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
     <collision name='point_collision3'>
-      <pose>-0.0359 0.082 0 0 0 0</pose>
+      <pose>-0.079500 0.104200 0.033400 0 0 0 </pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
     <collision name='point_collision4'>
-      <pose>-0.0359 -0.082 0 0 0 0</pose>
+      <pose>-0.079500 -0.104200 0.033400 0 0 0 </pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
     <collision name='point_collision5'>
-      <pose>0.0359 0.082 0.213 0 0 0</pose>
+      <pose>0.079500 0.104200 -0.033400 0 0 0 </pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
     <collision name='point_collision6'>
-      <pose>0.0359 -0.082 0.213 0 0 0</pose>
+      <pose>0.079500 -0.104200 -0.033400 0 0 0 </pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
     <collision name='point_collision7'>
-      <pose>-0.0359 0.082 0.213 0 0 0</pose>
+      <pose>-0.079500 0.104200 -0.033400 0 0 0 </pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
     <collision name='point_collision8'>
-      <pose>-0.0359 -0.082 0.213 0 0 0</pose>
+      <pose>-0.079500 -0.104200 -0.033400 0 0 0 </pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
-   </link>
+  </link>
 </model>
 </sdf>

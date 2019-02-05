@@ -1,24 +1,33 @@
 <?xml version="1.0"?>
 <sdf version='1.6'>
 <model name="005_tomato_soup_can">
+  <!--
+    Axes:
+      +X - Left (smaller dimension)
+      +Y - Towards Bottom (larger dimension)
+      +Z - Towards Front
+    Origin:
+      (0, 0, 0) at the center of the box.
+  -->
   <link name="base_link_soup">
     <inertial>
-      <pose frame=''>0 0 0.05095 0 0 0</pose>
-      <mass>0.349</mass>
+      <pose frame=''>0 0 0 0 0 0</pose>
+      <mass>0.349000</mass>
         <inertia>
-          <ixx>0.000401963003958</ixx>
+          <ixx>0.000402</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.000401963003958</iyy>
+          <iyy>0.000200</iyy>
           <iyz>0</iyz>
-          <izz>0.00019994602625</izz>
+          <izz>0.000402</izz>
         </inertia>
     </inertial>
+
     <visual name='base_link_soup'>
-      <pose frame=''>0 0 0.05095 -1.57 0 1.57</pose>
+      <pose frame=''>0 0 0 0 0 0</pose>
       <geometry>
         <mesh>
-          <uri>../meshes/005_tomato_soup_can_textured.obj</uri>
+          <uri>textures/005_tomato_soup_can_textured.obj</uri>
         </mesh>
       </geometry>
     </visual>
@@ -32,14 +41,14 @@
       spheres will provide fixed contact points (simulating distributed contact
       points around the face).  However, for arbitrary grip configuration, the
       slightly inset box will provide contact with a *slight* offset (in this
-      case a deviation of 0.0005 m from the visual surface).
+      case a deviation of 0.001 m from the visual surface).
      -->
-    <collision name='soup_can_collision'>
-      <pose>0 0 0.05095 0 0 0</pose>
+    <collision name='box_collision'>
+      <pose>0 0 0 -1.57 0 0</pose>
       <geometry>
         <cylinder>
-          <radius>0.03285</radius>
-          <length>0.1009</length>
+          <radius>0.031850</radius>
+          <length>0.099900</length>
         </cylinder>
       </geometry>
       <material>
@@ -48,56 +57,56 @@
     </collision>
 
     <collision name='point_collision1'>
-      <pose>0.03385 0 0 0 0 0</pose>
+      <pose>0.016425 0.050450 0.016425 0 0 0 </pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
     <collision name='point_collision2'>
-      <pose>0 0.03385 0 0 0 0</pose>
+      <pose>0.016425 -0.050450 0.016425 0 0 0 </pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
     <collision name='point_collision3'>
-      <pose>-0.03385 0 0 0 0 0</pose>
+      <pose>-0.016425 0.050450 0.016425 0 0 0 </pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
     <collision name='point_collision4'>
-      <pose>0 -0.03385 0 0 0 0</pose>
+      <pose>-0.016425 -0.050450 0.016425 0 0 0 </pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
     <collision name='point_collision5'>
-      <pose>0.03385 0 0.1019 0 0 0</pose>
+      <pose>0.016425 0.050450 -0.016425 0 0 0 </pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
     <collision name='point_collision6'>
-      <pose>0 0.03385 0.1019 0 0 0</pose>
+      <pose>0.016425 -0.050450 -0.016425 0 0 0 </pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
     <collision name='point_collision7'>
-      <pose>-0.03385 0 0.1019 0 0 0</pose>
+      <pose>-0.016425 0.050450 -0.016425 0 0 0 </pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
     </collision>
 
     <collision name='point_collision8'>
-      <pose>0 -0.03385 0.1019 0 0 0</pose>
+      <pose>-0.016425 -0.050450 -0.016425 0 0 0 </pose>
       <geometry>
         <sphere><radius>1e-7</radius></sphere>
       </geometry>
